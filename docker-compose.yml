@@ -1,22 +1,22 @@
 version: '3'
 
 services:
-  php-fpm:
+  web:
     build:
-      context: ./php-fpm
+      context: .
+      dockerfile: docker/web/Dockerfile
+    image: 'localhost:5000/web'
     volumes:
-      - ./:/var/www
-
+      - './docker/web/php.ini:/usr/local/etc/php/php.ini:ro'
+      - '.:/srv/app:rw,cached'
   nginx:
-    build:
-      context: ./nginx
-    volumes:
-      - ./:/var/www
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/sites/:/etc/nginx/sites-available
-      - ./nginx/conf.d/:/etc/nginx/conf.d
-      - ./logs:/var/log
-    depends_on:
-      - php-fpm
+    image: nginx
     ports:
-      - "8070:80"
+      - '8181:80'
+    volumes:
+      - './docker/nginx/conf.d:/etc/nginx/conf.d:ro'
+      - '.:/srv/app/'
+    depends_on:
+      - web
+volumes:
+  my-datavolume:
