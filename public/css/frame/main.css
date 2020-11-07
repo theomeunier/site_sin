@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-family: Calibri, Helvetica, arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#main-logo {
+    width: 10%;
+    height: auto;
+
+    margin: 25px auto;
+}

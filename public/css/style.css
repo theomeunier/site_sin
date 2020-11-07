@@ -1,2 +1,13 @@
 /* import reset */
 @import url('reset.css');
+
+/* import template*/
+@import url('template/index.css');
+@import url('template/produit.css');
+@import url('template/contact.css');
+
+/* import frame */
+@import url("frame/layout.css");
+@import url("frame/nav.css");
+@import url("frame/footer.css");
+@import url("frame/main.css");

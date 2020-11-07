@@ -9,6 +9,11 @@
  - Mettre son index dans le dossier public 
 #
  
-pour le css 
+### Css 
 
  crée un fichier css avec le quel on met un fichier `style.css`
+ 
+ pour importer un fichier css on fait 
+ ```
+@import url('reset.css');
+``` 

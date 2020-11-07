@@ -1,0 +1,10 @@
+.news_content{
+    font-size: 18px;
+    text-align: center;
+
+    margin: 1em 0.5em;
+}
+
+.news_content p{
+    margin: 1em;
+}
