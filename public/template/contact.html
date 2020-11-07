@@ -21,15 +21,47 @@
     </header>
 
     <section class="content_wrapper">
-        <h1>Nous contacter</h1>
+        <h1 style="margin-top: 1em">Nous contacter</h1>
 
-        <div>
+        <div style="margin-top: 2em">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ipsam, quaerat. Amet assumenda
                 autem eveniet facilis hic impedit incidunt laudantium neque possimus praesentium quia quidem reiciendis
                 rerum sapiente, tempore vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ipsam, quaerat. Amet assumenda
                 autem eveniet facilis hic impedit incidunt laudantium neque possimus praesentium quia quidem reiciendis
                 rerum sapiente, tempore vel.
             </p>
+        </div>
+
+        <div class="form">
+            <div class="form_content">
+                <div class="div_form_contact">
+                    <div class="form_sub_content">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div class="form_sub_content">
+                        <label for="name">Prénom</label>
+                        <input type="text" id="firtname" name="user_name">
+                    </div>
+                </div>
+                <div class="div_form_contact">
+                    <div class="form_sub_content">
+                        <label for="name">telephone</label>
+                        <input type="text" id="phone" name="user_name">
+                    </div>
+                    <div class="form_sub_content">
+                        <label for="mail">Email </label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                </div>
+                <div class="form_content_message">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="user_message" class="input_text"></textarea>
+                </div>
+            </div>
+            <div class="form_content">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
         </div>
 
     </section>
